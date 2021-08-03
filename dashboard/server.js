@@ -29,7 +29,19 @@ module.exports = async bot => {
           }
         )
     );
-
+    var minifyHTML = require('express-minify-html-terser');
+    app.use(minifyHTML({
+        override:      true,
+        exception_url: false,
+        htmlMinifier: {
+            removeComments:            true,
+            collapseWhitespace:        true,
+            collapseBooleanAttributes: true,
+            removeAttributeQuotes:     true,
+            removeEmptyAttributes:     true,
+            minifyJS:                  true
+        }
+    }));
     app.use(
         session({
           store: new MemoryStore({ checkPeriod: 86400000 }),

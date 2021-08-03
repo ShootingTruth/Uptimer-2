@@ -30,16 +30,13 @@
         <div class="card vcodes-card-custom bg-vcodes border-white border-0">
           <div class="vcodes-card-custom-img" onerror="backImgError(this);" style="background-image: url('/img/banner.png');"></div>
           <div class="card-custom-avatar">
-            <img class="img-fluid" class="pulse-avatar-online" onerror="imgError(this);" src="<%= bot.users.cache.get(a).displayAvatarURL({ dynamic: true }) %>" alt="Avatar" />
+            <img class="img-fluid" class="pulse-avatar-online" onerror="imgError(this);" src="<%= bot.users.cache.get(a.id).displayAvatarURL({ dynamic: true }) %>" alt="Avatar" />
           </div>
           <div style="background: transparent;" class="card-body">
-            <h4 translate="no" class="card-title"><%= bot.users.cache.get(a).username %>
+            <h4 translate="no" class="card-title"><%= bot.users.cache.get(a.id).username %>
             <span data-tooltip="Verified" data-tooltip-location="top"><i class="fad fa-badge-check has-text-danger"></i></span>
             </h4>
-            <p translate="no" class="card-text vCodesbotDesc">EQ RAIDER<br>
-                OWNER OF- <a href="https://discord.gg/avengers">https://discord.gg/avengers</a><br>
-                A PROFESSIONAL BOT DEV<br>
-                A WEB DESIGNER</p>
+            <p translate="no" class="card-text vCodesbotDesc"><%= a.desc %></p>
           </div>
         </div>
       </div>

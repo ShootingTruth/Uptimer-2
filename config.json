@@ -10,14 +10,22 @@
         "url": "http://localhost:3000",
         "callback": "http://localhost:3000/callback",
         "discord_server_ID": "842461679546531890",
+        "ownershow": false,
         "owners": [
-            "OWNERS"
+            {
+                "id": "597822927198748686",
+                "desc": "OWNER DESCRIPTION"
+            },
+            {
+                "id": "743834886833438770",
+                "desc": "OWNER2 DESCRIPTION"
+            }
         ],
         "arc": {
             "enabled": "false",
             "code": ""
         }
     },
-    "mongodb": "mongodb://localhost:3000/guitarhost",
-    "discord": "https://discord.gg/guitarhost"
+    "mongodb": "mongodb://localhost:3000/nighthost",
+    "discord": "https://discord.gg/nighthost"
 }
