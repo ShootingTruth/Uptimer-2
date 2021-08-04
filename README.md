@@ -12,12 +12,12 @@ An Open Sourced Uptime Monitor Linked Through Discord, You Can Monitor Your Site
  - Web Dashboard
  - Dashboard Monitor Add/Edit/Delete
  - Discord Login System
+ - Admin Panel
 
 # Update May Take Place
  - Multiple Login System Like `Discord/Google/Facebook`
  - Blog System
  - Online Ticket System
- - Admin Panel
  - Timeout System
 
 # Links

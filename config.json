@@ -1,31 +1,32 @@
 {
     "bot": {
         "prefix": "!",
-        "id": "BOT ID",
-        "secret": "BOT SECRET",
-        "token": "BOT TOKEN"
+        "id": "BOT_ID",
+        "secret": "BOT_SECRET",
+        "token": "BOT_TOKEN"
     },
     "dashboard": {
         "port": 3000,
         "url": "http://localhost:3000",
         "callback": "http://localhost:3000/callback",
-        "discord_server_ID": "842461679546531890",
+        "discord_server_ID": "DISCORD_SERVER_ID",
+        "ownerids": ["OWNER1", "OWNER2"],
         "ownershow": false,
         "owners": [
             {
-                "id": "597822927198748686",
+                "id": "OWNER1",
                 "desc": "OWNER DESCRIPTION"
             },
             {
-                "id": "743834886833438770",
+                "id": "OWNER2",
                 "desc": "OWNER2 DESCRIPTION"
             }
         ],
         "arc": {
-            "enabled": "false",
+            "enabled": false,
             "code": ""
         }
     },
-    "mongodb": "mongodb://localhost:3000/nighthost",
+    "mongodb": "mongodb://localhost:8000/nighthost",
     "discord": "https://discord.gg/nighthost"
 }
